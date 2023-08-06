@@ -19,9 +19,6 @@ pip install -e .
 
 pip install black
 
-
-pip install poetry
-
 ```
 
 Please make sure that you install the pytesseract library using the right method depending on your system.
