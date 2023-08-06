@@ -6,17 +6,21 @@ Provides utilities to extract text from PDFs, converting them to image and then 
 
 
 ```
+# conda activate base
+# conda remove -n langchain_hr_image_ranker --all
 conda create -n langchain_hr_image_ranker python=3.11
 conda activate langchain_hr_image_ranker
 conda install -c conda-forge poppler
 pip install pdf2image
-
-pip install --force-reinstall \\wsl.localhost\Ubuntu\home\gilf\chainlit\src\dist\chainlit-0.6.1.1-py3-none-any.whl
-pip install -e .
-pip install langchain
 pip install opencv-python
-pip install black
 conda install -c conda-forge pytesseract
+pip install python-dotenv
+pip install -e .
+
+pip install black
+
+
+pip install poetry
 
 ```
 
