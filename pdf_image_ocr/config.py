@@ -4,7 +4,7 @@ from pathlib import Path
 import pytesseract
 from dotenv import load_dotenv
 
-from hr_image_ranker.log_init import logger
+from pdf_image_ocr.log_init import logger
 
 load_dotenv()
 

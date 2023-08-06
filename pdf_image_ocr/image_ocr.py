@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import List
 
-from hr_image_ranker.pdf2image_converter import convert_image, convert_to_cv2_image
+from pdf_image_ocr.pdf2image_converter import convert_image, convert_to_cv2_image
 
 import pytesseract
 from PIL import PpmImagePlugin
@@ -18,8 +18,8 @@ def convert_img_to_text(pdf_file: Path) -> str:
 
 
 if __name__ == "__main__":
-    from hr_image_ranker.config import cfg
-    from hr_image_ranker.log_init import logger
+    from pdf_image_ocr.config import cfg
+    from pdf_image_ocr.log_init import logger
     for doc in cfg.doc_location.glob("*"):
         logger.info(doc)
         converted_text = convert_img_to_text(doc)

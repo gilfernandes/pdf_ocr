@@ -4,8 +4,8 @@ from typing import List
 
 from pdf2image import convert_from_path
 
-from hr_image_ranker.config import cfg
-from hr_image_ranker.log_init import logger
+from pdf_image_ocr.config import cfg
+from pdf_image_ocr.log_init import logger
 import cv2
 import numpy as np
 
